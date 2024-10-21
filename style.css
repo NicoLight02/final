@@ -1,0 +1,555 @@
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #E7C6FF;
+  height: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+h1.Logo {
+  margin-right: 20px;
+  color: #512260;
+  font-size: 40px;
+  background-color: #c197d2;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+
+h2.Name {
+  color: #512260;
+  font-size: 50px;
+}
+
+.search-bar {
+  background-color: #c197d2;
+  padding: 15px 70px;
+  border-radius: 5px;
+  color: #ffffff;
+}
+
+nav {
+  background-color: #565b81;
+  padding: 10px 0;
+  border-radius: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  margin: 0 15px;
+  padding: 10px 15px;
+  background-color: #85549c;
+  border-radius: 5px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff4fb;
+  font-size: 20px;
+
+}
+
+main {
+  display: flex;
+  padding: 20px;
+}
+
+.news {
+  max-width: 400px;
+  flex: 2;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #c197d2;
+  align-items: center;
+  color: #fff4fb;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.news a {
+  text-decoration: none;
+  color: #512260;
+  font-size: 20px;
+}
+
+.news h2 {
+  font-size: 40px;
+}
+
+.slide img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+}
+
+.caption {
+  position: absolute;
+  top: 200px;
+  left: 5%;
+  color: white;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+}
+
+.reviews {
+  flex: 2;
+  display: flex;
+  background-color: #c197d2;
+  color: #fff4fb;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.reviews div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.reviews img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.reviews h2 {
+  font-size: 40px;
+}
+
+footer {
+  background-color: #c197d2;
+  padding: 10px;
+  text-align: center;
+  font-size: 14;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer ul li {
+  margin: 0 15px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #512260;
+  font-size: 20px;
+}
+
+.topRatings,
+.newReleases {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  background-color: #c197d2;
+  color: #fff4fb;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  align-items: center;
+}
+
+.topRatings img {
+  max-height: 150px;
+  border-radius: 10px;
+  border: 4px solid #512260;
+  text-align: center;
+}
+
+.newReleases {
+  margin-left: 20px;
+}
+
+.topRatings h2,
+.newReleases h2,
+.review h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.topRatings ul,
+.newReleases ul,
+.topMembers ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.topRatings ul li,
+.newReleases ul li,
+.topMembers ul li {
+  margin-bottom: 20px;
+}
+
+.topRatings ul li a,
+.newReleases ul li a,
+.topMembers ul li a {
+  text-decoration: none;
+  color: #fff4fb;
+}
+
+.newReleases img {
+  height: 150px;
+  width: 258px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+  border: 4px solid #512260;
+}
+
+.review {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  background-color: #c197d2;
+  color: #fff4fb;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 20px;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.review img {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 4px solid #512260;
+  display: block;
+  margin: 20px auto;
+}
+
+.review h3 {
+  font-size: 30px;
+}
+
+.newsWebsite {
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+  flex: 2;
+  margin-right: 20px;
+  text-align: center;
+  background-color: #c197d2;
+  align-items: center;
+  color: #fff4fb;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.newsWebsite a {
+  text-decoration: none;
+  color: #512260;
+  font-size: 20px;
+}
+
+.newsWebsite h2 {
+  font-size: 40px;
+}
+
+.newsWebsite .slide img {
+  width: 400px;
+  height: 250px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.newsWebsite .caption {
+  margin-left: 5%;
+}
+
+.newsColumn {
+  display: flex;
+  flex-direction: column;
+  max-width: 50%;
+  flex: 2;
+  margin-right: 20px;
+  background-color: #c197d2;
+  color: #fff4fb;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.newsColumn h2 {
+  font-size: 40px;
+}
+
+.newsColumn img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.community {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  flex: 2;
+  margin-right: 20px;
+  background-color: #c197d2;
+  color: #fff4fb;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.community h2 {
+  font-size: 40px;
+}
+
+.forum {
+  background-color: #6c3781;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.forum h3 {
+  font-size: 30px;
+}
+
+.forum img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.topMembers {
+  display: flex;
+  flex-direction: column;
+  max-width: 25%;
+  flex: 2;
+  margin-right: 20px;
+  background-color: #c197d2;
+  color: #fff4fb;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.topMembers h2 {
+  font-size: 40px;
+}
+
+.topMembers img {
+  width: 125px;
+  height: 125px;
+  border-radius: 100%;
+  margin-bottom: 30px;
+}
+
+.aboutUs {
+  max-width: 60%;
+  height: 800px;
+  flex: 2;
+  margin-right: 20px;
+  background-color: #c197d2;
+  color: #fff4fb;
+  font-size: 25px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutUs h2 {
+  font-size: 40px;
+}
+
+.socialMedia img {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  margin-right:50px;
+}
+
+.aboutMe {
+  max-width: 35%;
+  height: 800px;
+  flex: 2;
+  margin-right: 20px;
+  background-color: #c197d2;
+  color: #fff4fb;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+}
+
+.aboutMe h2 {
+  font-size: 40px;
+}
+
+.aboutMe img{
+  width: 40%;
+  height: auto;
+  border-radius: 100%;
+}
+
+/* For mobile devices (width up to 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .container {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  h1.Logo {
+    font-size: 30px;
+  }
+
+  h2.Name {
+    font-size: 40px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  footer {
+    width: 90%;
+  }
+}
+
+/* For tablets (width between 601px and 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  h1.Logo {
+    font-size: 35px;
+  }
+
+  h2.Name {
+    font-size: 45px;
+  }
+
+  h2.Search {
+    margin-right: -10px;
+  }
+
+  nav {
+    margin-left: -10px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+  }
+
+  main {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .reviews {
+    margin-top: 20px;
+    max-width: 95%;
+  }
+}
+
+/* For desktops (width above 901px) */
+@media (min-width: 901px) {
+  body {
+    font-size: 20px;
+  }
+
+  .container {
+    padding: 30px;
+  }
+
+  h1.Logo {
+    font-size: 40px;
+  }
+
+  h2.Name {
+    font-size: 50px;
+  }
+
+  nav ul {
+    justify-content: space-around;
+  }
+}
